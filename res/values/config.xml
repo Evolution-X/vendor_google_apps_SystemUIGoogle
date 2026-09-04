@@ -100,4 +100,9 @@
 
     <!-- Configuration for wallpaper focal area -->
     <string name="focal_area_target" translatable="false">com.google.android.apps.magicportrait.service.MagicPortraitWallpaperService</string>
+
+    <!-- Whether to request the max refresh rate before biometric auth for a snappier unlock.
+         Default true (correct for UDFPS Pixel devices); override in a device runtime overlay to
+         force off/on per device. -->
+    <bool name="config_request_pre_auth_refresh_rate">true</bool>
 </resources>
