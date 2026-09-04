@@ -122,6 +122,7 @@ import com.google.android.systemui.keyguard.AmbientIndicationCoreStartable;
 import com.google.android.systemui.keyguard.data.quickaffordance.NowPlayingQuickAffordanceConfig;
 import com.google.android.systemui.keyguard.data.repository.AmbientIndicationRepository;
 import com.google.android.systemui.keyguard.domain.interactor.AmbientIndicationInteractor;
+import com.google.android.systemui.keyguard.refreshrate.RefreshRateRequesterBinder;
 import com.google.android.systemui.keyguard.ui.composable.elements.GoogleAmbientIndicationElementProvider;
 import com.google.android.systemui.keyguard.ui.sections.DefaultAmbientIndicationAreaSection;
 import com.google.android.systemui.power.dagger.PowerModuleGoogle;
@@ -353,6 +354,12 @@ public abstract class SystemUIGoogleModule {
     @ClassKey(AmbientIndicationCoreStartable.class)
     abstract CoreStartable bindAmbientIndicationCoreStartable(
             AmbientIndicationCoreStartable impl);
+
+    @Binds
+    @IntoMap
+    @ClassKey(RefreshRateRequesterBinder.class)
+    abstract CoreStartable bindRefreshRateRequesterBinder(
+            RefreshRateRequesterBinder impl);
 
     @Provides
     @SysUISingleton

@@ -2,4 +2,9 @@
 <resources>
     <!-- Whether to show extreme battery saver reminder -->
     <bool name="config_show_extreme_battery_saver_reminder">true</bool>
+
+    <!-- Whether to request the max refresh rate before biometric auth for a snappier unlock.
+         Default true (correct for UDFPS Pixel devices); override in a device runtime overlay to
+         force off/on per device. -->
+    <bool name="config_request_pre_auth_refresh_rate">true</bool>
 </resources>
