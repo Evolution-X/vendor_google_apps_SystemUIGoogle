@@ -31,4 +31,7 @@
     <string name="severe_low_battery_dialog_switch_action_text">Switch</string>
     <string name="extreme_low_battery_notification_title">Very low battery</string>
     <string name="extreme_low_battery_notification_text">Your phone will shut down if it’s not charged soon</string>
+
+    <string name="calendar_quick_affordance_label">Calendar</string>
+    <string name="calculator_quick_affordance_label">Calculator</string>
 </resources>
