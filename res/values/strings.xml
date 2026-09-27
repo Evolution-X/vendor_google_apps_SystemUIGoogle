@@ -45,4 +45,5 @@
 
     <string name="calendar_quick_affordance_label">Calendar</string>
     <string name="calculator_quick_affordance_label">Calculator</string>
+    <string name="home_controls_tile_title">Google Home</string>
 </resources>

@@ -118,6 +118,8 @@ import com.android.systemui.wallpapers.dagger.WallpaperModule;
 import com.google.android.systemui.battery.BatterySaverModuleGoogle;
 import com.google.android.systemui.gesture.GestureModuleGoogle;
 import com.google.android.systemui.keyguard.AmbientIndicationCoreStartable;
+import com.android.systemui.controls.controller.ControlsTileResourceConfiguration;
+import com.google.android.systemui.controls.GoogleControlsTileResourceConfigurationImpl;
 import com.google.android.systemui.keyguard.data.quickaffordance.CalculatorQuickAffordanceConfig;
 import com.google.android.systemui.keyguard.data.quickaffordance.CalendarQuickAffordanceConfig;
 import com.google.android.systemui.keyguard.data.quickaffordance.NowPlayingQuickAffordanceConfig;
@@ -401,6 +403,10 @@ public abstract class SystemUIGoogleModule {
     @IntoSet
     abstract KeyguardQuickAffordanceConfig bindCalculatorQuickAffordanceConfig(
             CalculatorQuickAffordanceConfig impl);
+
+    @Binds
+    abstract ControlsTileResourceConfiguration bindControlsTileResourceConfiguration(
+            GoogleControlsTileResourceConfigurationImpl impl);
 
     @Binds
     abstract ThemeOverlayController bindThemeOverlayController(
