@@ -42,6 +42,13 @@ android_library {
         "smartspace-proto-java",
         "smartspace-proto-lite-java",
         "tensorflowlite_java",
+        // ASI matchmaker overview client for screenshot notification smart actions. Requires
+        // matchmaker/libs/com.google.android.apps.miphone.aiai.matchmaker.overview.jar to be
+        // present (see matchmaker/Android.bp) — comment out both this and "guava" below if
+        // building without it.
+        //"google-matchmaker-lib",
+        // Explicit (transitive today; FundamentalOS lists it too) — matchmaker/guava users.
+        //"guava",
     ],
     enable_ksp: true,
 }

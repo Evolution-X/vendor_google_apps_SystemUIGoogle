@@ -1,0 +1,15 @@
+// Evolution X — ASI matchmaker overview client (prebuilt).
+//
+// Client library that talks to the on-device Android System Intelligence (ASI,
+// com.google.android.as) ContentSuggestions service. Required by
+// com.google.android.systemui.screenshot.ScreenshotNotificationSmartActionsProviderGoogle.
+// Extracted from a stock Pixel SystemUIGoogle build; the runtime service is provided by the
+// ASI prebuilt already shipped in vendor/google/<device>/proprietary. Not included in this
+// repo — copy com.google.android.apps.miphone.aiai.matchmaker.overview.jar into libs/
+// (FundamentalOS ships the identical jar at the same path in their tree) before building with
+// this module enabled.
+// java_import {
+//    name: "google-matchmaker-lib",
+//    sdk_version: "current",
+//    jars: ["libs/com.google.android.apps.miphone.aiai.matchmaker.overview.jar"],
+//}

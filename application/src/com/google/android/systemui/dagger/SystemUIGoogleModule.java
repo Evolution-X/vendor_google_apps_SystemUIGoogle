@@ -77,7 +77,6 @@ import com.android.systemui.rotationlock.RotationLockModule;
 import com.android.systemui.rotationlock.RotationLockNewModule;
 import com.android.systemui.scene.SceneContainerFrameworkModule;
 import com.android.systemui.screencapture.common.ScreenCaptureModule;
-import com.android.systemui.screenshot.ReferenceScreenshotModule;
 import com.android.systemui.settings.MultiUserUtilsModule;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.shade.NotificationShadeWindowControllerImpl;
@@ -128,6 +127,7 @@ import com.google.android.systemui.keyguard.refreshrate.RefreshRateRequesterBind
 import com.google.android.systemui.keyguard.ui.composable.elements.GoogleAmbientIndicationElementProvider;
 import com.google.android.systemui.keyguard.ui.sections.DefaultAmbientIndicationAreaSection;
 import com.google.android.systemui.power.dagger.PowerModuleGoogle;
+import com.google.android.systemui.screenshot.dagger.GoogleScreenshotModule;
 import com.google.android.systemui.smartspace.BcSmartspaceDataProvider;
 import com.google.android.systemui.smartspace.DateSmartspaceDataProvider;
 import com.google.android.systemui.smartspace.KeyguardSmartspaceStartable;
@@ -193,7 +193,7 @@ import javax.inject.Provider;
         RecentsModule.class,
         ReferenceNotificationsModule.class,
         PosturingModule.class,
-        ReferenceScreenshotModule.class,
+        GoogleScreenshotModule.class,
         RotationLockModule.class,
         RotationLockNewModule.class,
         ScreenCaptureModule.class,
